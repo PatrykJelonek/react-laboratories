@@ -5,15 +5,11 @@ import SearchToolbar from "./SerachToolbar.js";
 import DashboardContent from "./DashboardContent.js";
 
 function Dashboard(props) {
-
 	return <div className='container'>
-		<NavigationDrawer />
-		<SearchToolbar />
-
-		<main>
-			<DashboardContent />
-		</main>
-	</div> ;
+		<NavigationDrawer/>
+		<SearchToolbar/>
+		<DashboardContent/>
+	</div>;
 }
 
 export default Dashboard;

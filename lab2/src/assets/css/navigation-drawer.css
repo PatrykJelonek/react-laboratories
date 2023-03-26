@@ -1,4 +1,103 @@
 .navigation {
     grid-area: navigation;
-    background: red;
+    height: 100vh;
+    background: white;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+
+.navigation__list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navigation__item {
+    text-align: left;
+    margin: 5px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+}
+
+.navigation__logo {
+    margin: 0;
+    height: 80px;
+    background: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 25px;
+    color: rgba(0, 0, 0, .7);
+    padding: 0 20px;
+}
+
+.navigation__logo h1 {
+    color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navigation__item svg {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.navigation__item--selected {
+    background: #cadefc;
+    color: #5f5dbd;
+    font-weight: bold;
+}
+
+.navigation__item--selected::after {
+    content: " ";
+    background: #5f5dbd;
+    width: 5px;
+    height: 10px;
+}
+
+.navigation__item--header {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigation__bars {
+    display: none;
+}
+
+.navigation__logo--char {
+    display: block;
+    color: #5f5dbd;
+    transform: skewY(-35deg);
+    text-shadow: 1px 3px 0 #3E187A;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+
+@media (max-width: 1000px) {
+    .navigation {
+        height: 80px;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        transition: height 0.3s;
+        z-index: 999;
+    }
+
+    .navigation__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation__bars {
+        display: block;
+    }
+
+    .navigation--open {
+        height: 100vh;
+        background: white;
+    }
 }

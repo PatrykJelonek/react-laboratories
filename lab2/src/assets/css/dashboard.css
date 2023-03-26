@@ -1,12 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: azure;
+    background: #eeeeee;
 }
 
 .container {
     display: grid;
     grid-template-columns: [col1] 250px [col2] auto;
-    grid-template-rows: [row1] 80px [row2] calc(100vh - 80px);
+    grid-template-rows: [row1] 80px [row2] auto [row3] auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
     grid-template-areas:
         "navigation searchToolbar"
         "navigation content"
+        "navigation content"
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-areas:
+        "navigation navigation"
+        "searchToolbar searchToolbar"
+        "content content"
+    }
 }
