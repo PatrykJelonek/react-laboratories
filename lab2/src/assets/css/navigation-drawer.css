@@ -9,6 +9,8 @@
 .navigation__list {
     list-style-type: none;
     padding: 10px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
 }
 
 .navigation__item {
@@ -98,6 +100,7 @@
         bottom: 0;
         transition: height 0.3s;
         z-index: 999;
+        overflow-y: hidden;
     }
 
     .navigation__logo {
@@ -113,5 +116,9 @@
     .navigation--open {
         height: 100vh;
         background: var(--components-bg);
+    }
+
+    .navigation__list {
+        padding: 25px 0 50px 0;
     }
 }
