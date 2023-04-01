@@ -68,16 +68,16 @@
 .card {
     padding: 25px 0;
     box-sizing: border-box;
-    background: white;
+    background: var(--components-bg);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     font-weight: bold;
-    color: rgba(0, 0, 0, .1);
+    color: var(--color-second);
     font-size: 2em;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, .1);
+    box-shadow: 2px 5px 10px var(--box-shadow);
 }
 
 .card--one {

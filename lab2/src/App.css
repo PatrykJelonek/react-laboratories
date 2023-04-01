@@ -1,5 +1,20 @@
 body {
   box-sizing: border-box;
+  font-size: 14px;
+
+  --background: #eeeeee;
+  --color: rgba(0, 0, 0, .5);
+  --color-second: rgba(0,0,0,.2);
+  --components-bg: white;
+  --box-shadow: rgba(0,0,0,.1);
+}
+
+.isDark {
+  --background: #212121;
+  --color: white;
+  --color-second: rgba(255,255,255,.2);
+  --components-bg: #424242;
+  --box-shadow: rgba(255,255,255,.05);
 }
 
 .App {
