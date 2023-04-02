@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'misc',
-        element: '<h1>Misc</h1>'
+        element: <Layouts title='Misc' />
       },
       {
         path: 'cards',

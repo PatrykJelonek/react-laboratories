@@ -1,0 +1,16 @@
+.layout-container {
+    width: calc(100% - 25px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 75vw;
+    max-height: calc(100vh - 250px);
+}
+
+.error {
+    color: red;
+}
