@@ -1,0 +1,109 @@
+.dashboard-content {
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 20px 5px 0;
+    grid-area: content;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "card-one"
+        "card-four"
+        "card-two"
+        "card-three"
+        "card-fife"
+        "card-six"
+        "card-seven"
+}
+
+@media (max-width: 1000px) {
+    .dashboard-content {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .dashboard-content {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "card-one card-one card-one card-one"
+        "card-four card-four card-four card-four"
+        "card-four card-four card-four card-four"
+        "card-two card-two card-three card-three"
+        "card-fife card-fife card-six card-six"
+        "card-seven card-seven card-seven card-seven"
+    }
+}
+
+@media (min-width: 931px) {
+    .dashboard-content {
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+        "card-one card-one card-one card-one card-one"
+        "card-four card-four card-four card-four card-four"
+        "card-four card-four card-four card-four card-four"
+        "card-two card-three card-fife card-six card-seven"
+    }
+}
+
+@media (min-width: 1241px) {
+    .dashboard-content {
+        grid-template-columns: [col1] 4fr [col2] 1fr [col3] 1fr [col4] 1fr [col5] 1fr;
+        grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas:
+        "card-one card-two card-two card-three card-three"
+        "card-four card-fife card-fife card-six card-six"
+        "card-four card-seven card-seven card-seven card-seven"
+    }
+}
+
+
+
+.card {
+    padding: 25px 0;
+    box-sizing: border-box;
+    background: var(--components-bg);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-second);
+    font-size: 2em;
+    box-shadow: 2px 5px 10px var(--box-shadow);
+}
+
+.card--one {
+    grid-area: card-one;
+}
+
+.card--two {
+    grid-area: card-two;
+}
+
+.card--three {
+    grid-area: card-three;
+}
+
+.card--four {
+    grid-area: card-four;
+}
+
+.card--fife {
+    grid-area: card-fife;
+}
+
+.card--six {
+    grid-area: card-six;
+}
+
+.card--seven {
+    grid-area: card-seven;
+}

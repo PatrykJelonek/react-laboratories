@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   font-size: 14px;
+  color: var(--color);
 
   --background: #eeeeee;
   --color: rgba(0, 0, 0, .5);
@@ -11,8 +12,8 @@ body {
 
 .isDark {
   --background: #212121;
-  --color: white;
-  --color-second: rgba(255,255,255,.2);
+  --color: #FFFF66;
+  --color-second: rgba(255, 255, 102, .4);
   --components-bg: #424242;
   --box-shadow: rgba(255,255,255,.05);
 }

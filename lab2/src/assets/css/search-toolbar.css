@@ -61,12 +61,17 @@
     margin-left: 15px;
     font-size: 1.1em;
     min-height: 50px;
-    width: 500px;
-    padding: 0px 10px;
+    width: 440px;
+    padding: 0 10px;
+    color: var(--color);
     background: var(--components-bg);
 }
 
-@media (max-width: 800px) {
+.search-toolbar__input::placeholder {
+    color: var(--color-second);
+}
+
+@media (max-width: 750px) {
     .search-toolbar__input {
         width: 100%;
     }

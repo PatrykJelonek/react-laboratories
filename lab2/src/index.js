@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Layouts from "./compontents/Layouts.js";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +20,36 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'other',
-        element: '<h1>Hello World</h1>'
+        path: 'layouts',
+        element: <Layouts title='Layouts' />
+      },
+      {
+        path: 'account-settings',
+        element: <Layouts title='Account Settings' />
+      },
+      {
+        path: 'authentication',
+        element: <Layouts title='Authentication' />
+      },
+      {
+        path: 'misc',
+        element: '<h1>Misc</h1>'
+      },
+      {
+        path: 'cards',
+        element: '<h1>Cards</h1>'
+      },
+      {
+        path: 'user-interface',
+        element: '<h1>User Interface</h1>'
+      },
+      {
+        path: 'extended-ui',
+        element: `<h1>Extended UI</h1>`
+      },
+      {
+        path: 'boxicons',
+        element: "<h1>Boxicons</h1>"
       }
     ]
   },
