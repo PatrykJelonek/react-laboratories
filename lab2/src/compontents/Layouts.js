@@ -17,12 +17,10 @@ function Layouts(props) {
 				if (actualData.error) {
 					throw new Error(actualData.error.message);
 				}
-				console.log(actualData.error.message);
 				setData(actualData);
 				setError(null);
 			})
 			.catch((err) => {
-				console.log(err);
 				setError(err.message);
 				setData(null);
 			})
